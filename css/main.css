@@ -1,0 +1,323 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: linear-gradient(0.4turn, #000000, #363636, #5C5C5C, #A7A7A7 );
+}
+
+body {
+  margin: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.shown {
+  visibility: visible;
+  display: block;
+}
+
+.overshown {
+  overflow-y: scroll;
+}
+
+.overhidden {
+  overflow: hidden;
+}
+
+.backgroundfix {
+  background-attachment: fixed !important;
+}
+
+@font-face {
+  font-family: 'Time Clock';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/E1234-p7pER.woff) format('woff2');
+}
+
+/*____________________________________________________________________________________*/
+/* Primary */
+
+header.masthead {
+  padding-top: 2rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.pfp {
+  background-image: url("../img/me (1).jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+
+.row {
+  flex-direction: column;
+  
+}
+
+/*____________________________________________________________________________________*/
+/* Box Page */
+
+.boxPage {
+  width: 88.372093%;
+  height: auto;
+  border: solid 5px white;
+  background: #000000;
+  margin: 02.2532189% 0;
+  padding: 10px 0;
+}
+.boxPage * {
+ display: flex;
+ align-self: center;
+}
+.boxPage p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  font-stretch: 110%;
+  margin: 0 15px;
+  padding: 0;
+  color: white;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 429px) {
+  .boxPage p {
+    font-size: 1.6rem;
+  }
+}
+
+.subtext {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+.boxPage img.resume {
+  width: 09.3023256%;
+  height: 11.627907%;
+  margin: 0 15px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(151deg) brightness(108%) contrast(101%);
+}
+.boxPage img {
+  width: 11.627907%;
+  height: 11.627907%;
+  margin: 0 15px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(151deg) brightness(108%) contrast(101%);
+}
+
+/*____________________________________________________________________________________*/
+/* Box Icon */
+
+.boxIcon {
+  width: 80px;
+  height: 80px;
+  border: solid 5px white;
+  background: #000000;
+  margin: 0;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.boxIcon img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(151deg) brightness(108%) contrast(101%);
+}
+.boxIconWrapper {
+  width: 88.372093%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/*____________________________________________________________________________________*/
+/* Some List Commands */
+a {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: inherit;
+  float: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #B4AA97;
+}
+
+#mainPoemsMenu .icon-rap {
+  background-color: #915e21;
+  width: auto;
+}
+
+/*____________________________________________________________________________________*/
+p {
+  margin: 16px 0px;
+  font-size: 16px;
+  padding: 10px 0px 5px 5px;
+  float: none;
+  color: #B4AA97;
+}
+
+pre {
+  text-align: center;
+  margin: 16px 0px;
+  font-size: 16px;
+  padding: 10px 0px 5px 5px;
+  float: none;
+  color: #B4AA97;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.wrapword {
+  white-space: -moz-pre-wrap !important;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  white-space: pre-wrap;
+  /* css-3 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+  white-space: -webkit-pre-wrap;
+  /* Newer versions of Chrome/Safari*/
+  word-break: break-all;
+  white-space: normal;
+}
+
+/*____________________________________________________________________________________*/
+/* Standard */
+
+hr {
+  color: #A7A7A7;
+  background-color: #A7A7A7;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  padding: 0 10px;
+}
+
+.fa-angle-double-down {
+  font-size: 25px;
+  text-align: center;
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  width: 343px;
+  height: 62.5px;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.4, 1.4, 1.4);
+    transform: scale3d(1.4, 1.4, 1.4)
+  }
+
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+}
+
+
+a {
+  color: #A8897D;
+}
+
+a, ul, ol, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*____________________________________________________________________________________*/
+/* Text */
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p {
+  padding: 5px 0;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #833721;
+}
+
+.estimatedTime h5 {
+  font-family: 'Time Clock';
+}
+
+.h1, h1 {
+  font-size: 72px;
+}
+
+.h2, h2 {
+  font-size: 60px;
+}
+
+.h3, h3 {
+  font-size: 48px;
+}
+
+@media (max-width: 719px) {
+  .h3, h3 {
+    font-size: 34px;
+  }
+  .BottomButton {
+    font-size: 20px;
+  }
+}
+
+.h4, h4 {
+  font-size: 36px;
+}
+
+.h5, h5 {
+  font-size: 24px;
+}
+
+.h6, h6 {
+  font-size: 20px;
+}
+
+.p, p {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
