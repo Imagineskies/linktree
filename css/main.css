@@ -1,7 +1,6 @@
 body, html {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
   background: linear-gradient(0.4turn, #000000, #363636, #5C5C5C, #A7A7A7 );
 }
 
